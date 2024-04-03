@@ -1,0 +1,530 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+main {
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+    width: 90%;
+    max-width: 75em;
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+
+
+}
+
+
+
+.logo {
+    position: absolute;
+    margin: 20px;
+}
+
+.input {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+.ingresado {
+
+
+    width: 100%;
+
+    height: 50%;
+    font-size: 26px;
+    line-height: 100%;
+    background-color: #E5E5E5;
+    border: none;
+    min-width: 3fr;
+    color: #0A3871;
+    resize: none;
+    padding: 3% 10%;
+
+
+
+}
+
+.ingresado:focus {
+    border: none;
+    outline: none;
+}
+
+.ingresado::placeholder {
+    color: #0A3871;
+
+}
+
+
+
+.textito {
+    font-weight: 200;
+    color: grey;
+    font-size: small;
+
+
+}
+
+.textito {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+    padding-left: 18%;
+}
+
+.textito img {
+    height: 14px;
+}
+
+.bajo {
+    margin-top: 100px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.boton1 {
+    width: 35%;
+    height: 50px;
+    background: #0A3871;
+    border-radius: 15px;
+    color: #E5E5E5;
+    min-width: 150px;
+    font-weight: 200;
+    border: none;
+
+}
+
+
+.boton2 {
+    width: 35%;
+    height: 50px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    min-width: 150px;
+    font-weight: 200;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 20% 0;
+    box-shadow: 0px 24px 25px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+
+}
+
+.box-lleno {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 10;
+
+}
+
+.box-vacio {
+    visibility: visible;
+    z-index: 1;
+}
+
+.texto .resultado {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.copiar {
+    width: 90%;
+    height: 50px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    min-width: 150px;
+    font-weight: 200;
+    display: none;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    body {
+        background-color: #E5E5E5;
+        font-family: 'Intern', Helvetica, sans-serif;
+        font-size: 16px;
+
+    }
+
+    main {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    header {
+        display: grid;
+        justify-content: center;
+        background-color: whitesmoke;
+        border: 1px;
+        box-shadow: 1px 5px 10px gray;
+    }
+
+    .logo {
+        position: relative;
+
+    }
+
+    .input {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20em;
+        row-gap: 0px;
+    }
+
+
+    .ingresado {
+        width: 100%;
+
+        height: 100%;
+        margin: -10px auto -50px;
+        font-size: 1.625rem;
+        line-height: 100%;
+        background-color: #E5E5E5;
+        border: none;
+        color: #0A3871;
+        padding: 0px;
+
+    }
+
+    .ingresado:focus {
+        border: none;
+        outline: none;
+    }
+
+    .ingresado::placeholder {
+        color: #0A3871;
+
+    }
+
+
+
+    .textito {
+        font-weight: 200;
+        color: grey;
+        font-size: small;
+        margin-top: 0px;
+        padding-top: 0%;
+        gap: 5px;
+        margin-bottom: 5px;
+        padding-left: 0%;
+    }
+
+
+
+    .textito {
+        display: flex;
+        justify-content: start;
+        margin-top: 0%;
+
+
+
+    }
+
+    .textito img {
+        height: 0.875rem;
+        margin-top: 0%;
+    }
+
+
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .3rem;
+        flex-wrap: wrap;
+
+    }
+
+
+    .boton1 {
+        width: 100%;
+        background: #0A3871;
+        border-radius: 0.9375rem;
+        color: #E5E5E5;
+        font-weight: 200;
+        border: none;
+
+    }
+
+
+    .boton2 {
+        width: 100%;
+        background: #D8DFE8;
+        border: 0.0625rem solid #0A3871;
+        border-radius: 0.9375rem;
+        font-weight: 200;
+    }
+
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: 50%;
+        width: 100%;
+
+    }
+
+    .box img {
+        display: none;
+    }
+
+    .texto .resultado {
+        font-size: 22.4px;
+        font-weight: 400;
+        margin-bottom: 0.625rem;
+        padding: 5%;
+        margin: -40px auto 0;
+    }
+
+    .copiar {
+        width: 80%;
+        height: 3.125rem;
+        background: #D8DFE8;
+        border: 0.1625rem solid #0A3871;
+        border-radius: 1.2rem;
+        font-weight: 400;
+        display: none;
+        text-align: center;
+
+    }
+
+    .box-lleno {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width:767px) and (max-width: 1024px) {
+
+
+
+    * {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    body {
+        background-color: #E5E5E5;
+        font-family: 'Intern', Helvetica, sans-serif;
+        font-size: 16px;
+
+
+    }
+
+    main {
+        text-align: center;
+        display: flex;
+        justify-content: space;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+
+    header {
+        display: grid;
+        justify-content: center;
+        background-color: whitesmoke;
+        border: 1px;
+        box-shadow: 1px 5px 10px gray;
+    }
+
+    .logo {
+        position: relative;
+
+    }
+
+    .input {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 20em;
+        row-gap: 0px;
+    }
+
+
+    .ingresado {
+        width: 100%;
+
+        height: 100%;
+        margin: -10px auto -50px;
+        font-size: 2.5rem;
+        line-height: 100%;
+        background-color: #E5E5E5;
+        border: none;
+        color: #0A3871;
+        padding: 0px;
+
+    }
+
+    .ingresado:focus {
+        border: none;
+        outline: none;
+    }
+
+    .ingresado::placeholder {
+        color: #0A3871;
+
+    }
+
+
+
+    .textito {
+        font-weight: 200;
+        color: grey;
+        font-size: 1rem;
+        margin-top: 0px;
+        padding-top: 0%;
+        gap: 5px;
+        margin-bottom: 5px;
+        padding-left: 0%;
+    }
+
+
+
+    .textito {
+        display: flex;
+        justify-content: start;
+        margin-top: 0%;
+
+
+
+    }
+
+    .textito img {
+        height: 0.875rem;
+        margin-top: 0%;
+    }
+
+
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+
+
+    }
+
+
+    .boton1 {
+        width: 48%;
+        background: #0A3871;
+        border-radius: 0.9375rem;
+        color: #E5E5E5;
+        font-weight: 200;
+        border: none;
+
+    }
+
+
+    .boton2 {
+        width: 48%;
+        background: #D8DFE8;
+        border: 0.0625rem solid #0A3871;
+        border-radius: 0.9375rem;
+        font-weight: 200;
+    }
+
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .box img {
+        display: none;
+    }
+
+    .texto .resultado {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 0.625rem;
+        padding: 5%;
+        padding-top: -5%;
+        margin: -70px auto 0;
+    }
+
+    .copiar {
+        width: 80%;
+        height: 3.125rem;
+        background: #D8DFE8;
+        border: 0.1625rem solid #0A3871;
+        border-radius: 1.2rem;
+        font-weight: 400;
+        display: none;
+        text-align: center;
+        margin-bottom: -50px;
+
+    }
+
+    .box-lleno {
+        justify-content: space-evenly;
+    }
+
+
+}
